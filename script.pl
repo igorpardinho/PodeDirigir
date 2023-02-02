@@ -1,9 +1,6 @@
-#!/usr/bin/perl
-
-
 use warnings;
 
-system("sudo apt-get install figlet");
+system("sudo apt-get install figlet > .hidden ; rm hidden");
 
 print "Digite seu nome: ";
 
@@ -35,4 +32,3 @@ if($idade >= 18){
 
  } else{
      print "Não Pode dirigir";
- }
